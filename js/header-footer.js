@@ -1,3 +1,4 @@
+
 // ショートカットキーの定数を設定
 const SHORTCUTS = {
     1: 'toggleMenu',  // メニュー開閉
@@ -45,4 +46,3 @@ document.addEventListener('keydown', function (event) {
         alert(`キーボードの${event.key}が押されました。ショートカットは未定です`);
     }
 });
-
