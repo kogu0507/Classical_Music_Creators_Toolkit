@@ -1,41 +1,62 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>サイト名</title>
-    <link rel="stylesheet" href="css/header-footer.css">
-</head>
-<body>
+<html><head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>サイト名</title> 
+    <link rel="stylesheet" href="css\header-footer.css">
+   </head> 
+   <body> 
+    
 
-    <!-- ヘッダープレースホルダー -->
-    <div id="header-placeholder"></div>
+    <div class="header"> 
+        <h1 class="site-title">サイト名</h1> 
+        <!-- ハンバーガーメニューのボタン -->
+        <button class="menu-button" id="menuToggle" aria-label="メニューを開く">
+            <span class="menu-icon"></span> 
+            <span class="menu-text">MENU</span> 
+        </button> 
+    </div> 
+    
+    
+    <!-- <div id="header-placeholder"></div> ヘッダーのテンプレは使えん。多分JSのせい -->
+    
+    <!-- スライドメニュー -->
+     <nav class="slide-menu" id="slideMenu"> 
+        <a href="#">メニューアイテム 1</a> 
+        <a href="#">メニューアイテム 2</a> 
+        <a href="#">メニューアイテム 3</a> 
+        <a href="#">メニューアイテム 4</a> 
+    </nav>
+    
+    <!-- オーバーレイ -->
 
-    <!-- メインコンテンツ -->
-    <main>
-        <section>
-            <ul>
-                <li>2024/09/05更新</li>
-                <li>完了 レスポンシブ</li>
-                <li>完了 MENUボタン</li>
-                <li>完了 aria-label=</li>
-                <li>途中 ショートカットボタン 1はメニュー開閉、2はtestだぴょん 3～0はアラート</li>
-                <li>未 テンプレート化 header　footer</li>
-            </ul>
-        </section>
-        <section>
-            <p>
-                【階層】
-                
-            </p>
-        </section>
-    </main>
+    <div class="overlay" id="overlay"></div>
+    
 
-    <!-- フッタープレースホルダー -->
+    
+
+    <section>
+        <ul>
+            <li>2024/09/05更新</li>
+            <li>完了 レスポンシブ</li>
+            <li>完了 MENUボタン</li>
+            <li>完了 aria-label=</li>
+           <li>途中 ショートカットボタン 1はメニュー開閉、2はtestだぴょん 3～0はアラート</li>
+            <li>未 テンプレート化 header　footer</li>
+        </ul>
+        <p>
+            【階層】
+            
+        </p>
+  
+   </section>
+       
+    
+    <!-- フッター部分 --> 
     <div id="footer-placeholder"></div>
-
-    <!-- スクリプト読み込み -->
-    <script src="js/include.js"></script>
-    <script src="js/header-footer.js"></script>
-</body>
-</html>
+    
+    <!-- スクリプト部分 --> 
+    <script src="js\include.js"></script>
+    <script src="js\header-footer.js"></script>
+    
+   
+  </body></html>
